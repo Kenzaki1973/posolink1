@@ -1,0 +1,482 @@
+ERROR - 2023-12-10 03:43:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pesolink1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pesolink1\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#7 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\pesolink1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\pesolink1\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#5 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#6 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-12-10 03:43:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `postjob`
+WHERE `category` = :category:
+AND `status` = :status:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+ERROR - 2023-12-10 03:43:50 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pesolink1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pesolink1\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#7 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\pesolink1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\pesolink1\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#5 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#6 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-12-10 03:43:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `postjob`
+WHERE `category` = :category:
+AND `status` = :status:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+ERROR - 2023-12-10 03:43:58 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pesolink1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pesolink1\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#7 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\pesolink1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\pesolink1\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#5 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#6 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-12-10 03:43:58 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `postjob`
+WHERE `category` = :category:
+AND `status` = :status:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+ERROR - 2023-12-10 03:51:21 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'pesolink', 3306, '', 0)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\laragon\www\pesolink1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\laragon\www\pesolink1\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#6 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#7 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#8 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#10 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\laragon\www\pesolink1\system\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\laragon\www\pesolink1\app\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', Array)
+#5 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+#6 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+#7 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#9 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#10 {main}
+CRITICAL - 2023-12-10 03:51:21 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `postjob`
+WHERE `category` = :category:
+AND `status` = :status:', [...], false)
+ 3 SYSTEMPATH\Model.php(871): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\UserController.php(49): CodeIgniter\Model->__call('get', [])
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->userhome()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 03:52:12 --> Array to string conversion
+in APPPATH\Controllers\EmployerController.php on line 179.
+ 1 APPPATH\Controllers\EmployerController.php(179): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\pesolink1\\app\\Controllers\\EmployerController.php', 179)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('6')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 03:59:23 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\EmployerController.php(181): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('6')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 04:00:02 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\EmployerController.php(181): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('6')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 04:01:04 --> Array to string conversion
+in APPPATH\Controllers\EmployerController.php on line 181.
+ 1 APPPATH\Controllers\EmployerController.php(181): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'C:\\laragon\\www\\pesolink1\\app\\Controllers\\EmployerController.php', 181)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('6')
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 04:06:24 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\EmployerController.php(181): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('6')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 04:08:31 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\EmployerController.php(180): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('6')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 04:11:20 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\EmployerController.php(180): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('1')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+ERROR - 2023-12-10 04:45:06 --> mysqli_sql_exception: Column 'job_type' cannot be null in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `po...', 0)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', Array, false)
+#4 C:\laragon\www\pesolink1\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesolink1\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesolink1\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\pesolink1\app\Controllers\EmployerController.php(89): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+#9 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+#10 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-12-10 04:45:06 --> Column 'job_type' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `postjob` (`company_name`, `occupation_title`, `required_no`, `location`, `qualification`, `job_description`, `prefered`, `category`, `salary`, `job_type`, `per`, `dateposted`, `job_updated`) VALUES (:company_name:, :occupation_title:, :required_no:, :location:, :qualification:, :job_description:, :prefered:, :category:, :salary:, :job_type:, :per:, :dateposted:, :job_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmployerController.php(89): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+ERROR - 2023-12-10 04:48:38 --> mysqli_sql_exception: Column 'job_type' cannot be null in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `po...', 0)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', Array, false)
+#4 C:\laragon\www\pesolink1\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesolink1\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesolink1\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\pesolink1\app\Controllers\EmployerController.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+#9 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+#10 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-12-10 04:48:38 --> Column 'job_type' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `postjob` (`company_name`, `occupation_title`, `required_no`, `location`, `qualification`, `job_description`, `prefered`, `category`, `salary`, `job_type`, `per`, `dateposted`, `job_updated`) VALUES (:company_name:, :occupation_title:, :required_no:, :location:, :qualification:, :job_description:, :prefered:, :category:, :salary:, :job_type:, :per:, :dateposted:, :job_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmployerController.php(90): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+ERROR - 2023-12-10 04:49:05 --> mysqli_sql_exception: Column 'job_type' cannot be null in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `po...', 0)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', Array, false)
+#4 C:\laragon\www\pesolink1\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesolink1\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesolink1\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\pesolink1\app\Controllers\EmployerController.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+#9 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+#10 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-12-10 04:49:05 --> Column 'job_type' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `postjob` (`company_name`, `occupation_title`, `required_no`, `location`, `qualification`, `job_description`, `prefered`, `category`, `salary`, `job_type`, `per`, `dateposted`, `job_updated`) VALUES (:company_name:, :occupation_title:, :required_no:, :location:, :qualification:, :job_description:, :prefered:, :category:, :salary:, :job_type:, :per:, :dateposted:, :job_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmployerController.php(90): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+ERROR - 2023-12-10 04:50:18 --> mysqli_sql_exception: Column 'job_type' cannot be null in C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\laragon\www\pesolink1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `po...', 0)
+#1 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `po...')
+#2 C:\laragon\www\pesolink1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `po...')
+#3 C:\laragon\www\pesolink1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `po...', Array, false)
+#4 C:\laragon\www\pesolink1\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\pesolink1\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\pesolink1\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 C:\laragon\www\pesolink1\app\Controllers\EmployerController.php(90): CodeIgniter\Model->insert(Array)
+#8 C:\laragon\www\pesolink1\system\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+#9 C:\laragon\www\pesolink1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+#10 C:\laragon\www\pesolink1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\pesolink1\public\index.php(87): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\pesolink1\system\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\...')
+#13 {main}
+CRITICAL - 2023-12-10 04:50:18 --> Column 'job_type' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `postjob` (`company_name`, `occupation_title`, `required_no`, `location`, `qualification`, `job_description`, `prefered`, `category`, `salary`, `job_type`, `per`, `dateposted`, `job_updated`) VALUES (:company_name:, :occupation_title:, :required_no:, :location:, :qualification:, :job_description:, :prefered:, :category:, :salary:, :job_type:, :per:, :dateposted:, :job_updated:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\EmployerController.php(90): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->addjob()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 05:26:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update(null, [])
+ 3 APPPATH\Controllers\EmployerController.php(181): CodeIgniter\Model->update()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\EmployerController->applicant_hired('9')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\EmployerController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 05:54:41 --> Undefined variable $cl
+in APPPATH\Views\User\respond.php on line 53.
+ 1 APPPATH\Views\User\respond.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cl', 'C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('User/respond', [], true)
+ 5 APPPATH\Controllers\UserController.php(454): view('User/respond')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->respond_form()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 05:54:57 --> Undefined variable $cl
+in APPPATH\Views\User\respond.php on line 53.
+ 1 APPPATH\Views\User\respond.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cl', 'C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('User/respond', [], true)
+ 5 APPPATH\Controllers\UserController.php(454): view('User/respond')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->respond_form()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 06:22:56 --> Undefined variable $res
+in APPPATH\Views\User\respond.php on line 53.
+ 1 APPPATH\Views\User\respond.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $res', 'C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('User/respond', [], true)
+ 5 APPPATH\Controllers\UserController.php(454): view('User/respond')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->respond_form()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 06:22:59 --> Undefined variable $res
+in APPPATH\Views\User\respond.php on line 53.
+ 1 APPPATH\Views\User\respond.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $res', 'C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('User/respond', [], true)
+ 5 APPPATH\Controllers\UserController.php(454): view('User/respond')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->respond_form()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 06:28:39 --> Undefined variable $res
+in APPPATH\Views\User\respond.php on line 53.
+ 1 APPPATH\Views\User\respond.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $res', 'C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('User/respond', [], true)
+ 5 APPPATH\Controllers\UserController.php(454): view('User/respond')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->respond_form('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 06:28:40 --> Undefined variable $res
+in APPPATH\Views\User\respond.php on line 53.
+ 1 APPPATH\Views\User\respond.php(53): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $res', 'C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php', 53)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pesolink1\\app\\Views\\User\\respond.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('User/respond', [], true)
+ 5 APPPATH\Controllers\UserController.php(454): view('User/respond')
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->respond_form('9')
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 14:03:55 --> Class "PHPMailer\PHPMailer\PHPMailer" not found
+in APPPATH\Controllers\UserController.php on line 518.
+ 1 APPPATH\Controllers\UserController.php(590): App\Controllers\UserController->configureMailer()
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->registration_process()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 14:26:28 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\UserController.php(542): CodeIgniter\Model->update('57', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->verify('9fdeaac38a8e769016f8933ed7cf8710')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 14:26:29 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 930.
+ 1 SYSTEMPATH\BaseModel.php(930): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(776): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\UserController.php(542): CodeIgniter\Model->update('57', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->verify('9fdeaac38a8e769016f8933ed7cf8710')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 14:43:17 --> Undefined array key "stat"
+in APPPATH\Views\Admin\manageuser.php on line 51.
+ 1 APPPATH\Views\Admin\manageuser.php(51): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "stat"', 'C:\\laragon\\www\\pesolink1\\app\\Views\\Admin\\manageuser.php', 51)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\pesolink1\\app\\Views\\Admin\\manageuser.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('Admin/manageuser', [], true)
+ 5 APPPATH\Controllers\AdminController.php(150): view('Admin/manageuser', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\AdminController->applicantinfo()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+CRITICAL - 2023-12-10 22:50:37 --> Undefined array key "activation_status"
+in APPPATH\Controllers\UserController.php on line 289.
+ 1 APPPATH\Controllers\UserController.php(289): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "activation_status"', 'C:\\laragon\\www\\pesolink1\\app\\Controllers\\UserController.php', 289)
+ 2 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\UserController->log()
+ 3 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserController))
+ 4 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(87): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\pesolink1\\public\\index.php')
+ERROR - 2023-12-10 23:25:42 --> Exception during registration: Undefined array key "verification_token"
+ERROR - 2023-12-10 23:26:22 --> Exception during registration: Undefined array key "verification_token"
